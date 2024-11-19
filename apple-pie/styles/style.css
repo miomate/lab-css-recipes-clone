@@ -10,15 +10,50 @@ html {
 }
 
 body, h1, h2, h3, h4, h5, h6, p, ol, ul {
-  margin: 0;
-  padding: 0;
+  /* margin: 0;
+  padding: 0; */
   font-weight: lighter;
 }
 
 /*  Set the font */
 body {
   font-family: "Helvetica", sans-serif;
+
+
+
+
 }
 
 /* STYLES */
 /* Write your CSS below */
+
+img.a {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  width: 95%;
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed;
+}
+
+/*ul li - instead of dot*/
+ul.dash {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 1em;
+}
+ul.dash > li:before {
+  display: inline-block;
+  content: "-";
+  width: 1em;
+  margin-left: -1em;
+}
+
+/* ----END ------*/
+/* Solid line */
+hr.solid {
+  border-top: 3px solid #bbb;
+}
+/* ----END ------*/
