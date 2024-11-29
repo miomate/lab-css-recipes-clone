@@ -10,8 +10,8 @@ html {
 }
 
 body, h1, h2, h3, h4, h5, h6, p, ol, ul {
-  /* margin: 0;
-  padding: 0; */
+  margin: 0;
+  padding: 0;
   font-weight: lighter;
 }
 
@@ -19,23 +19,47 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
 body {
   font-family: "Helvetica", sans-serif;
 
+}
 
+.hero {
+  background-image: url("../images/apple-pie.jpg");
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+h1 {
+  color: white;
+  font-family: sans-serif;
+  font-size: 70px;
+  font-weight:bold;
 
+}
+
+.content{
+  /* margin: 50px;
+   */
+   max-width: 600px;
+   margin: 60px auto;
+   /* margin-top: ; */
 }
 
 /* STYLES */
 /* Write your CSS below */
-
-img.a {
+.imgCtn {
+   border-bottom: 1px solid black;
+   margin-bottom: 20px;;
+}
+img {
+  max-width: 400px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
-  width: 95%;
-  background-position: center; 
-  background-repeat: no-repeat; 
-  background-attachment: fixed;
+  margin: 40px auto 30px;
+ 
+}
+
+h2 {
+  margin-bottom: 20px;
 }
 
 /*ul li - instead of dot*/
@@ -51,9 +75,18 @@ ul.dash > li:before {
   margin-left: -1em;
 }
 
+ol {
+  counter-reset: list;
+}
+ol > li {
+  list-style: none;
+}
+ol > li:before {
+  content: counter(list, lower-alpha) ") ";
+  counter-increment: list;
+}
+
 /* ----END ------*/
 /* Solid line */
-hr.solid {
-  border-top: 3px solid #bbb;
-}
+
 /* ----END ------*/
